@@ -6,6 +6,6 @@ namespace Assignment305.Models
     {
         [Key]
         public int Id { get; set; }
-
+        public ICollection<Property> Properties { get; set; }
     }
 }
