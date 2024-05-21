@@ -41,7 +41,6 @@ public class LongTerm implements Contract {
 
     @Override
     public Contracts SignContract() {
-        this.cont = new Contracts();
-        return cont;
+        return new Contracts(TenantId, PropertyId, TenantId, RentAmount);
     }
 }

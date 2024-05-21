@@ -17,7 +17,6 @@ public class ShortTerm implements Contract {
     private double RentAmount;
     private int TenantId;
     private int PropertyId;
-    private Contracts cont;
 
     @Override
     public void BuildContractId(int contractId) {
@@ -41,7 +40,6 @@ public class ShortTerm implements Contract {
 
     @Override
     public Contracts SignContract() {
-        this.cont = new Contracts();
-        return cont;
+        return new Contracts(TenantId, PropertyId, TenantId, RentAmount);
     }
 }
