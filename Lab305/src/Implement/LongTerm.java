@@ -17,6 +17,7 @@ public class LongTerm implements Contract {
     private double RentAmount;
     private int TenantId;
     private int PropertyId;
+    private Contracts cont;
 
     @Override
     public void BuildContractId(int contractId) {
@@ -39,7 +40,8 @@ public class LongTerm implements Contract {
     }
 
     @Override
-    public void SignContract(Contracts contracts) {
-        Contracts cont = new Contracts(contracts);
+    public Contracts SignContract() {
+        this.cont = new Contracts();
+        return cont;
     }
 }

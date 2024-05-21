@@ -15,5 +15,5 @@ public interface Contract {
     void BuildPropertyId(int propertyId);
     void BuildTenantId(int tenantId);
     void BuildRentalAmount(double amount);
-    void SignContract (Contracts contracts);
+    Contracts SignContract();
 }

@@ -14,6 +14,10 @@ public class Contracts {
     private int TenantId;
     private double RentalAmount;
 
+    public Contracts(){
+        
+    }
+    
     public Contracts(int Id, int PropertyId, int TenantId, double RentalAmount) {
         this.Id = Id;
         this.PropertyId = PropertyId;
