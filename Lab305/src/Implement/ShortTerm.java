@@ -40,6 +40,6 @@ public class ShortTerm implements Contract {
 
     @Override
     public Contracts SignContract() {
-        return new Contracts(TenantId, PropertyId, TenantId, RentAmount);
+        return new Contracts(ContractId, PropertyId, TenantId, RentAmount);
     }
 }
