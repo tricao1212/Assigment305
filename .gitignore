@@ -491,3 +491,4 @@ dist
 .yarn/install-state.gz
 .pnp.*
 /Lab305/nbproject/private/
+/Lab305/build/
